@@ -852,7 +852,8 @@ footer p span {
 
 @media (max-width: 785px) {
   .menu-icon {
-    display: block;
+    display: flex;
+    align-items: center;
   }
   ul.navlist {
     position: absolute;
@@ -974,4 +975,16 @@ footer p span {
     flex-direction: column;
     width: 100%;
   }
+}
+
+@font-face {
+  font-family: 'NexaBold';
+  src: url('font/nexa-bold.woff') format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'NexaRegular';
+  src: url('font/nexa-regular.woff') format('woff');
+  font-weight: normal;
 }
