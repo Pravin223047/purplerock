@@ -473,7 +473,7 @@ section {
   border: 1px solid var(--main-color);
   background: var(--gradient-white-bg);
   text-align: center;
-  height: 32rem;
+  height: 35rem;
 }
 
 .img-name {
@@ -709,13 +709,6 @@ footer p span {
     justify-content: center;
     text-align: center;
   }
-
-  .services .text-box h3 {
-    font-size: 1.8rem;
-  }
-  .contacts {
-    flex-direction: column;
-  }
 }
 
 @media (max-width: 991px) {
@@ -769,10 +762,6 @@ footer p span {
   .about .description2 .about_content p {
     margin-bottom: 3rem;
   }
-
-  .services .text-box h3 {
-    font-size: 1.5rem;
-  }
 }
 
 @media (max-width: 850px) {
@@ -811,6 +800,11 @@ footer p span {
   ul.navlist a {
     font-size: 1.5rem;
     margin: 1rem 0;
+  }
+  .proposal .text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
   .navlist.active {
     top: 100%;
@@ -874,12 +868,6 @@ footer p span {
   .fillter-buttons {
     display: grid;
     grid-gap: 1rem;
-  }
-
-  .proposal .text-box {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
   }
 
   .fillter-buttons button {
