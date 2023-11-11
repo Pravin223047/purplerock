@@ -309,63 +309,6 @@ section {
   z-index: 10;
 }
 
-.rotate-text {
-  position: absolute;
-  top: 0;
-  left: -53px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  padding: 2rem;
-}
-
-.rotate-text span {
-  position: relative;
-  width: 442px;
-  height: 442px;
-  background: rgb(234, 188, 255);
-  border: 6px solid #eaeef0;
-  border-radius: 50%;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.rotate-text span::before {
-  content: "";
-  position: absolute;
-  inset: 20px;
-  background: #f3f3f3;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.rotate-text span i {
-  position: absolute;
-  inset: 0;
-  background: var(--gradient-color-bg);
-  filter: blur(5px);
-  animation: animate 2s linear infinite;
-}
-
-.rotate-text .text {
-  position: absolute;
-  width: 490px;
-  height: 490px;
-  background: #f2f6fb;
-  border-radius: 50%;
-  box-shadow: 0 1px 6px 5.94px rgba(0, 0, 0, 0.2);
-  animation: rotateText 30s linear infinite;
-}
-
-.text b {
-  position: absolute;
-  transform-origin: 0 247px;
-  display: block;
-  top: 0;
-  left: 50%;
-  font-size: 1.2rem;
-}
 
 @keyframes moveText {
   0%,
@@ -386,15 +329,6 @@ section {
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-
-@keyframes rotateText {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0deg);
   }
 }
 
@@ -480,6 +414,7 @@ section {
   font-weight: 400;
   text-align: justify;
   color: var(--font-color);
+  font-style: italic;
 }
 
 .about .description .about_content .name {
