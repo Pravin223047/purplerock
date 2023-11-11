@@ -309,6 +309,14 @@ section {
   z-index: 10;
 }
 
+.text b {
+  position: absolute;
+  transform-origin: 0 247px;
+  display: block;
+  top: 0;
+  left: 50%;
+  font-size: 1.2rem;
+}
 
 @keyframes moveText {
   0%,
@@ -323,12 +331,12 @@ section {
   }
 }
 
-@keyframes animate {
+@keyframes rotateText {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
 }
 
