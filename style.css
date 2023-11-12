@@ -244,7 +244,7 @@ section {
 
 .btn-box {
   display: flex;
-  justify-content: space-between;
+  gap: 1rem;
   width: 680px;
   margin-top: 2rem;
   margin-bottom: 5rem;
@@ -306,6 +306,8 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgb(126, 2, 175);
+  border: 0.2rem solid black;
   z-index: 10;
 }
 
@@ -366,47 +368,38 @@ section {
   font-size: 2.5rem;
 }
 
-.about .investors h3 {
-  font-size: 1.5rem;
-  color: var(--font-color);
+.about .contents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.about .contents .description2 h3 {
+  font-size: 1.6rem;
+  color: black;
   font-weight: 500;
   letter-spacing: 1px;
   word-spacing: 2px;
 }
 
-.about .description,
-.about .description2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.about .contents .description,
+.about .contents .description2 {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  text-align: center;
-  gap: 1.3rem;
-  margin-bottom: 3rem;
-}
-
-.about .description2 {
-  justify-content: center !important;
-  grid-template-columns: 1fr;
-}
-
-.about .description .about_img {
-  border: 2px solid rgb(124, 0, 108);
+  gap: 1rem;
   padding: 1rem;
-  height: 30rem;
-}
-
-.about .description .about_img img {
-  height: 100%;
+  border: 2px solid var(--pink);
   width: 100%;
 }
-.about .description .about_content .heading {
+
+.about .contents .description .about_content .heading {
   font-size: 1.8rem;
   font-family: 500;
-  margin-bottom: 2rem;
   color: var(--color1);
 }
 
-.about .description .about_content .heading::after {
+.about .contents .description .about_content .heading::after {
   content: "";
   display: block;
   position: relative;
@@ -417,21 +410,78 @@ section {
   background: var(--gradient-color-bg);
 }
 
-.about .description .about_content p {
+.about .contents .description .about_content p {
   line-height: 1.5rem;
+  margin-top: 2rem;
   font-weight: 400;
   text-align: justify;
   color: var(--font-color);
   font-style: italic;
 }
 
-.about .description .about_content .name {
+.about .contents .description2 .button {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.about .contents .description .about_content .name {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   font-size: 1.2rem;
-  margin-bottom: 3rem;
+}
+
+.about .contents .description2 .meaning {
+  display: flex;
+  text-align: justify;
+  align-items: flex-start;
+}
+
+.about .contents .description2 .meaning p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--font-color);
+  line-height: 1.3rem;
+}
+
+.about .contents .description2 .meaning p b {
+  color: rgb(0, 0, 0);
+}
+
+.about .contents .description2 .meaning p u b {
+  background: var(--gradient-color-bg);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.about .contents .description2 .desc-img {
+  width: 250px;
+  height: 250px;
+  border: 2px solid black;
+  border-radius: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.about .contents .description2 .desc-img h2 {
+  font-size: 2rem;
+  color: #000;
+  font-weight: 500;
+}
+
+.about .contents .description2 .desc-img h2 span {
+  font-size: 2rem;
+  color: #000000;
+  font-weight: 500;
+}
+
+.about .contents .description2 .desc-img img {
+  height: 150px;
+  width: 150px;
 }
 
 .services {
@@ -468,12 +518,12 @@ section {
 .namesItem {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0,
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   border-radius: 10px;
   border: 1px solid var(--main-color);
   background: var(--gradient-white-bg);
   text-align: center;
-  height: 35rem;
+  height: 34rem;
 }
 
 .img-name {
@@ -521,23 +571,67 @@ section {
 }
 
 section .proposal {
-  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
+  gap: 1rem;
+}
+
+section .proposal span {
+  font-size: 2.5rem;
+}
+
+section .proposal .proposals {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   background: var(--gradient-white-bg2);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0,
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-  margin-top: 4rem;
   border-radius: 10px;
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
+  gap: 1rem;
   z-index: 1;
+  width: 100%;
   border: 1px solid var(--main-color);
+}
+section .proposal .prop {
+  display: flex;
+  background: var(--gradient-white-bg2);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  border-radius: 10px;
+  padding: 2rem 2rem;
+  gap: 1rem;
+  z-index: 1;
+  width: 100%;
+  border: 1px solid var(--main-color);
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+section .proposal .prop .text-box1 {
+  border: 1px solid var(--pink);
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+section .proposal .proposals .text-box {
+  border: 1px solid var(--pink);
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  gap: 1rem;
 }
 
 .text-box span {
@@ -545,16 +639,22 @@ section .proposal {
   font-weight: 600;
 }
 
-.text-box h3 {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  font-size: 1.5rem;
+.text-box h1 {
+  font-size: 1.2rem;
+  text-align: initial;
+  word-spacing: 1px;
   font-weight: 800;
   color: var(--color1);
 }
 
 .text-box .btn {
   padding: 10px 20px;
+  width: 15rem;
+}
+
+.text-box1 .btn {
+  padding: 10px 20px;
+  width: 15rem;
 }
 
 #progress {
@@ -595,13 +695,18 @@ footer {
   text-align: center;
   color: var(--color1);
   width: 100%;
+  align-items: center;
   margin: 0;
-  padding: 2rem;
+  padding: 1rem;
   height: 100%;
-  background: var(--gradient-white-bg);
+  background: var(--bg-color);
+}
+footer p {
+  padding-top: 1rem;
 }
 
 footer p span {
+  padding-top: 1rem;
   font-size: 1.2rem;
   width: 100%;
 }
@@ -609,16 +714,10 @@ footer p span {
 .footer__desc {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 3rem;
+  gap: 2rem;
   width: 100%;
   height: auto;
   border-bottom: 2px solid var(--pink);
-}
-
-.footer__desc .footer__img,
-.footer__desc .footer__content,
-.footer__desc .social-media {
-  margin-bottom: 2rem;
 }
 
 .footer__desc .footer__img img {
@@ -627,11 +726,10 @@ footer p span {
 
 .footer__desc .footer__content {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  text-align: left;
   flex-direction: column;
   gap: 1rem;
-  margin-bottom: 2rem;
   height: 100%;
 }
 
@@ -641,26 +739,8 @@ footer p span {
 
 .footer__desc .footer__content .footer__links li .footer__link {
   display: flex;
-  justify-content: center;
-  text-align: center;
+  justify-content: flex-start;
   gap: 1.5rem;
-  margin-top: 0.5rem;
-}
-
-.footer__desc .social-media {
-  margin-top: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.footer__desc .social-media .social {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: space-around;
-  gap: 2rem;
 }
 
 @media (max-width: 1365px) {
@@ -718,55 +798,18 @@ footer p span {
     padding-left: 3%;
     padding-right: 3%;
   }
-
-  .about .description {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .about .description2 {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .about .description2 .about_img {
-    height: 30rem;
-    width: 100%;
-  }
-  .about .investors {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1.5rem;
-    gap: 2rem;
-  }
-
-  .about .investors .patners {
-    align-items: center;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 50%;
-  }
-
-  .about .description .about_content .name {
-    margin-bottom: 0rem;
-  }
-
-  .about .description .about_img {
-    border: none;
-    padding: 0;
-  }
-
-  .about .description2 .about_content p {
-    margin-bottom: 3rem;
-  }
 }
 
 @media (max-width: 850px) {
   .footer__desc {
-    flex-direction: column;
+    display: grid;
+    padding: 1rem;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__desc .footer__img {
+    display: none;
   }
 }
 
@@ -777,8 +820,16 @@ footer p span {
     padding-left: 1%;
     padding-right: 1%;
   }
+  .footer {
+    margin: 0;
+  }
   .footer__desc {
     flex-direction: column;
+  }
+
+  .about .contents {
+    grid-template-columns: 1fr;
+    margin: 0;
   }
 }
 
@@ -797,11 +848,25 @@ footer p span {
     left: 0;
     border-top: 2px solid rgba(248, 202, 202, 0.7);
   }
+
+  .about .contents .description,
+  .about .contents .description2 {
+    padding: 0;
+    border: 0;
+  }
+
+  .home .btn-box {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    justify-content: space-around;
+  }
+
   ul.navlist a {
     font-size: 1.5rem;
     margin: 1rem 0;
   }
-  .proposal .text-box {
+  .proposal .text-box,
+  .proposal .text-box1 {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -809,6 +874,7 @@ footer p span {
   .navlist.active {
     top: 100%;
   }
+
   .overlay {
     width: 100vw;
     height: 100vh;
@@ -840,10 +906,17 @@ footer p span {
   .btn-box {
     display: grid;
     width: 50%;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: (2, 1fr);
     gap: 2rem;
     align-items: center;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
     justify-content: space-around;
+  }
+
+  section .proposal .proposals {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -853,6 +926,10 @@ footer p span {
   }
   section {
     padding: 30px 3%;
+  }
+
+  .services .desc .desc-contents p {
+    text-align: justify;
   }
 
   .text-animate {
@@ -865,6 +942,11 @@ footer p span {
   .about-btn button {
     padding: 10px 15px;
   }
+
+  .footer__desc {
+    grid-template-columns: 1fr;
+  }
+
   .fillter-buttons {
     display: grid;
     grid-gap: 1rem;
@@ -885,6 +967,10 @@ footer p span {
     font-size: 0.9rem;
   }
 
+  .namesItem {
+    height: 32rem;
+  }
+
   .img-hero img {
     height: 100%;
     margin: 0;
@@ -899,10 +985,5 @@ footer p span {
 
   header {
     padding: 0.4rem;
-  }
-
-  .formBtn {
-    flex-direction: column;
-    width: 100%;
   }
 }
