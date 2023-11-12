@@ -723,6 +723,7 @@ footer p span {
   width: 100%;
   height: auto;
   border-bottom: 2px solid var(--pink);
+  padding: 1rem;
 }
 
 .footer__desc .footer__img img {
