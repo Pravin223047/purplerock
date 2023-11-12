@@ -523,7 +523,7 @@ section {
 .namesItem {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0,
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-  padding: 1rem 1rem;
+  padding: 2rem 2rem;
   border-radius: 10px;
   border: 1px solid var(--main-color);
   background: var(--gradient-white-bg);
@@ -572,6 +572,7 @@ section {
   margin-bottom: 1.5rem;
   font-size: 0.9rem;
   color: var(--font-color);
+  text-align: justify;
 }
 
 section .proposal {
