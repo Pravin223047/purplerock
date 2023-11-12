@@ -925,7 +925,7 @@ footer p span {
   }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 730px) {
   html {
     font-size: 80%;
   }
