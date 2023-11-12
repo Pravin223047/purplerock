@@ -421,7 +421,6 @@ section {
   font-weight: 400;
   text-align: justify;
   color: var(--font-color);
-  font-style: normal;
 }
 
 .about .contents .description .about_content .stages,
@@ -782,6 +781,10 @@ footer p span {
 
   .about .contents .description {
     border: none;
+  }
+  .btn-box {
+    align-items: center;
+    justify-content: center;
   }
 }
 
