@@ -42,3 +42,26 @@ function activeMenu() {
 }
 activeMenu();
 window.addEventListener("scroll", activeMenu);
+
+// scroll reveal
+
+ScrollReveal({
+  distance: "15px",
+  duration: 2000,
+  delay: 200,
+  // reset: true ,
+});
+
+ScrollReveal().reveal(
+  ".home_info,.main-text,.proposal,.heading,.header,.img-hero,.hero-img img",
+  {
+    origin: "top",
+  }
+);
+ScrollReveal().reveal(".about-img,.contact-info,.contents", {
+  origin: "bottom",
+});
+ScrollReveal().reveal(".about_content", { origin: "top" });
+ScrollReveal().reveal(".allNames,footer,.img-hero,.about_img", {
+  origin: "bottom",
+});
