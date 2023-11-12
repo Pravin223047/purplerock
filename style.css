@@ -178,7 +178,8 @@ ul.navlist {
   margin-top: 0.3rem;
 }
 /* Home */
-#shadow-host-companion {
+
+section#shadow-host-companion {
   margin: 0;
   padding: 0;
   display: none;
@@ -514,7 +515,6 @@ section {
 .allNames {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-  align-items: center;
   text-align: center;
   gap: 2rem;
   z-index: 1;
@@ -528,7 +528,6 @@ section {
   border: 1px solid var(--main-color);
   background: var(--gradient-white-bg);
   text-align: center;
-  height: 34rem;
 }
 
 .img-name {
