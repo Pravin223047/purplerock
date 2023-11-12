@@ -178,6 +178,11 @@ ul.navlist {
   margin-top: 0.3rem;
 }
 /* Home */
+#shadow-host-companion {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
 
 section {
   padding: 90px 8%;
