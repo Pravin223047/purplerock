@@ -642,8 +642,8 @@ section .proposal .proposals .text-box {
   align-items: center;
   width: 100%;
   text-align: center;
+  justify-content: center;
   gap: 1rem;
-  justify-content:center;
 }
 
 .text-box span {
