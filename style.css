@@ -519,7 +519,7 @@ section {
 
 .allNames {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(420px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(290px, auto));
   text-align: center;
   gap: 2rem;
   z-index: 1;
@@ -581,6 +581,10 @@ section {
   text-align: justify;
 }
 
+.namesItem p::-webkit-scrollbar {
+  display: none;
+}
+
 section .proposal {
   display: flex;
   flex-direction: column;
@@ -596,29 +600,25 @@ section .proposal .proposals {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background: var(--gradient-white-bg2);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0,
-    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   border-radius: 10px;
   padding: 2rem 2rem;
   gap: 1rem;
   z-index: 1;
+  box-shadow: var(--hover-box-shadow);
   width: 100%;
-  border: 1px solid var(--main-color);
 }
 section .proposal .prop {
   display: flex;
   background: var(--gradient-white-bg2);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0,
-    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   border-radius: 10px;
   padding: 2rem 2rem;
   gap: 1rem;
   z-index: 1;
   width: 100%;
-  border: 1px solid var(--main-color);
   align-items: center;
   gap: 1rem;
   justify-content: center;
+  box-shadow: var(--hover-box-shadow);
 }
 
 section .proposal .prop .text-box1 {
@@ -826,16 +826,6 @@ footer p span {
 
   .footer__desc .footer__img {
     display: none;
-  }
-
-  .allNames {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 0;
   }
 }
 
