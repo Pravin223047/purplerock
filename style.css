@@ -514,8 +514,7 @@ section {
 
 .allNames {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
   text-align: center;
   gap: 2rem;
   z-index: 1;
@@ -524,11 +523,12 @@ section {
 .namesItem {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0,
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-  padding: 2rem 2rem;
+  padding: 1rem 1rem;
   border-radius: 10px;
   border: 1px solid var(--main-color);
   background: var(--gradient-white-bg);
   text-align: center;
+  padding: 2rem;
 }
 
 .img-name {
@@ -573,7 +573,6 @@ section {
   margin-bottom: 1.5rem;
   font-size: 0.9rem;
   color: var(--font-color);
-  text-align: justify;
 }
 
 section .proposal {
@@ -724,7 +723,6 @@ footer p span {
   width: 100%;
   height: auto;
   border-bottom: 2px solid var(--pink);
-  padding: 1rem;
 }
 
 .footer__desc .footer__img img {
@@ -804,6 +802,10 @@ footer p span {
   footer {
     padding-left: 3%;
     padding-right: 3%;
+  }
+
+  .services {
+    text-align: justify;
   }
 }
 
@@ -927,16 +929,12 @@ footer p span {
   }
 }
 
-@media (max-width: 730px) {
+@media (max-width: 530px) {
   html {
     font-size: 80%;
   }
   section {
     padding: 30px 3%;
-  }
-
-  .services .desc .desc-contents p {
-    text-align: justify;
   }
 
   .text-animate {
@@ -972,10 +970,6 @@ footer p span {
   header .btn {
     padding: 6px 8px;
     font-size: 0.9rem;
-  }
-
-  .namesItem {
-    height: 32rem;
   }
 
   .img-hero img {
