@@ -578,6 +578,7 @@ section {
   margin-bottom: 1.5rem;
   font-size: 0.9rem;
   color: var(--font-color);
+  text-align: justify;
 }
 
 section .proposal {
