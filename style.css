@@ -833,7 +833,7 @@ footer p span {
     justify-content: center;
     flex-direction: column;
     gap: 1rem;
-    padding: 1rem;
+    padding: 0;
   }
 }
 
