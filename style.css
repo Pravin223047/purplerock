@@ -515,7 +515,7 @@ section {
 
 .allNames {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(420px, auto));
   text-align: center;
   gap: 2rem;
   z-index: 1;
