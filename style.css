@@ -643,6 +643,7 @@ section .proposal .proposals .text-box {
   width: 100%;
   text-align: center;
   gap: 1rem;
+  justify-content:center;
 }
 
 .text-box span {
