@@ -44,12 +44,6 @@ body {
   overflow-x: hidden;
 }
 
-section#shadow-host-companion {
-  margin: 0;
-  padding: 0;
-  display: none;
-}
-
 header {
   padding: 15px 8%;
   width: 100%;
@@ -184,6 +178,12 @@ ul.navlist {
   margin-top: 0.3rem;
 }
 /* Home */
+
+section#shadow-host-companion {
+  margin: 0;
+  padding: 0;
+  display: none;
+}
 
 section {
   padding: 90px 8%;
@@ -417,17 +417,6 @@ section {
   color: var(--color1);
 }
 
-.about .contents .description .about_content .heading::after {
-  content: "";
-  display: block;
-  position: relative;
-  height: 2px;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  background: var(--gradient-color-bg);
-}
-
 .about .contents .description .about_content p,
 .about .contents .description .about_content h4 {
   font-size: 1.2rem;
@@ -438,38 +427,7 @@ section {
 
 .about .contents .description .about_content p {
   text-align: justify;
-}
-
-.about .contents .description .about_content p {
   font-size: 0.9rem;
-}
-
-.about .contents .description .about_content .stages {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: 100%;
-}
-
-.about .contents .description .about_content .stages .stage {
-  border: 2px solid var(--pink);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-}
-
-.about .contents .description .about_content .stages .stage h4 {
-  color: rgb(58, 1, 58);
-  text-align: center;
-  margin: 0.5rem 0;
-  font-weight: 500;
-  word-spacing: 2px;
-}
-
-.about .contents .description .about_content .stages .stage .btn {
-  width: 20rem;
 }
 
 .about .contents .description .about_content .img-box {
@@ -481,7 +439,17 @@ section {
   background-size: contain;
 }
 
-.about .contents .description .about_content .img-box img {
+.about .contents .description .about_content .video-box {
+  width: 500px;
+  height: 300px;
+  padding: 1rem;
+  border: 2px solid black;
+  background-position: center;
+  background-size: contain;
+}
+
+.about .contents .description .about_content .img-box img,
+.about .contents .description .about_content .img-box video {
   height: 100%;
   width: 100%;
 }
@@ -492,93 +460,6 @@ section {
   align-items: center;
   justify-content: flex-end;
   font-size: 1.2rem;
-}
-
-section .proposal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-
-section .proposal span {
-  font-size: 2.5rem;
-}
-
-section .proposal .proposals {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  background: var(--gradient-white-bg2);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0,
-    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-  border-radius: 10px;
-  padding: 2rem 2rem;
-  gap: 1rem;
-  z-index: 1;
-  width: 100%;
-  border: 1px solid var(--main-color);
-}
-section .proposal .prop {
-  display: flex;
-  background: var(--gradient-white-bg2);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0,
-    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-  border-radius: 10px;
-  padding: 2rem 2rem;
-  gap: 1rem;
-  z-index: 1;
-  width: 100%;
-  border: 1px solid var(--main-color);
-  align-items: center;
-  gap: 1rem;
-  justify-content: center;
-}
-
-section .proposal .prop .text-box1 {
-  border: 1px solid var(--pink);
-  border-radius: 10px;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: center;
-  text-align: center;
-  gap: 1rem;
-}
-
-section .proposal .proposals .text-box {
-  border: 1px solid var(--pink);
-  border-radius: 10px;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  text-align: center;
-  gap: 1rem;
-}
-
-.text-box span {
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
-.text-box h1 {
-  font-size: 1.2rem;
-  text-align: initial;
-  word-spacing: 1px;
-  font-weight: 800;
-  color: var(--color1);
-}
-
-.text-box .btn {
-  padding: 10px 20px;
-  width: 15rem;
-}
-
-.text-box1 .btn {
-  padding: 10px 20px;
-  width: 15rem;
 }
 
 #progress {
@@ -880,6 +761,13 @@ footer p span {
   .about .contents {
     gap: 0;
     border: none;
+  }
+
+  .about .contents .description .about_content .video-box {
+    width: 300px;
+  }
+  .about .contents .description .about_content .head-1 {
+    margin-bottom: 1rem;
   }
 }
 
