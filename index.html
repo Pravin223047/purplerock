@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Purplerock - The Inevitable Agenda. A movement towards positivity and a better future."
+    />
     <link rel="shortcut icon" href="Images/icon.png" type="image/x-icon" />
     <title>Purplerock - The Inevitable Agenda</title>
     <link rel="stylesheet" href="style.css" />
@@ -10,22 +14,41 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <meta property="og:title" content="Purplerock - The Inevitable Agenda" />
+    <meta
+      property="og:description"
+      content="A movement towards positivity and a better future."
+    />
+    <meta
+      property="og:url"
+      content="https://pravin223047.github.io/purplerock/index.html"
+    />
+    <link
+      rel="canonical"
+      href="https://pravin223047.github.io/purplerock/black.html"
+    />
+    <link
+      rel="canonical"
+      href="https://pravin223047.github.io/purplerock/purple.html"
+    />
   </head>
+
   <body>
     <header>
       <a href="#" class="logo"><span>P</span>urple<span>R</span>ock</a>
-      <ul class="navlist">
-        <li><a href="#Home" class="active">Home</a></li>
-        <li><a href="#about">Blackrock</a></li>
-        <li><a href="#services">Mission & Funds</a></li>
-        <li><a href="#collaboration">Collaboration</a></li>
-      </ul>
+      <nav>
+        <ul class="navlist">
+          <li><a href="#Home" class="active">Home</a></li>
+          <li><a href="#about">Blackrock</a></li>
+          <li><a href="#services">Mission & Funds</a></li>
+          <li><a href="#collaboration">Collaboration</a></li>
+        </ul>
+      </nav>
       <div class="right_header">
         <a
           href="https://pravin223047.github.io/purplerock/black.html"
           class="btn"
-        >
-          The Purple Pill</a
+          >The Purple Pill</a
         >
         <div class="menu-icon">
           <div class="bar"></div>
@@ -149,7 +172,7 @@
               >The purple Pill</a
             >
             <a
-              href="https://pravin223047.github.io/purplerock/purple.html"
+              href="https://persistventure.notion.site/Why-Purple-9bb3ca0e13d3478682ef6ce1769b2b89"
               class="btn btn1"
               >Why Purple?</a
             >
@@ -389,12 +412,20 @@
       </span>
     </div>
 
-    <!-- scroll reveal  -->
+    <!-- Scroll reveal and other scripts -->
     <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <!-- mixitup cdn js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
     <script src="app.js"></script>
+
+    <!-- Additional scripts for SEO improvements -->
+    <script>
+      // Implement 301 Redirects (Sample JavaScript code, server configuration might be required)
+      if (window.location.hostname === "example.com") {
+        window.location.replace(
+          "https://www.example.com" + window.location.pathname
+        );
+      }
+    </script>
   </body>
 </html>
