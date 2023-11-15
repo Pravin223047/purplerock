@@ -34,6 +34,15 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+
+    <!-- 301 Redirect -->
+    <script>
+      if (window.location.hostname === "pravin223047.github.io") {
+        window.location.replace(
+          "https://pravin223047.github.io" + window.location.pathname
+        );
+      }
+    </script>
   </head>
 
   <body>
@@ -410,14 +419,13 @@
       </div>
       <p>Copyright © 2023 <span>Purplerock</span>, Inc. All rights reserved.</p>
     </footer>
-
     <div id="progress">
       <span id="progress-value">
         <i class="bx bxs-chevrons-up"></i>
       </span>
     </div>
 
-    <!-- Additional scripts for SEO improvements -->
+    <!-- JavaScript files -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
