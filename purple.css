@@ -183,7 +183,7 @@ section {
 }
 
 .about .contents .description .about_content .img-box img,
-.about .contents .description .about_content .img-box video {
+.about .contents .description .about_content .img-box iframe {
   height: 100%;
   width: 100%;
 }
@@ -239,7 +239,6 @@ footer {
   height: 100%;
   background: var(--bg-color);
 }
-
 footer p {
   padding-top: 1rem;
 }
@@ -386,19 +385,19 @@ footer p span {
 
   .about .contents .description .about_content .img-box {
     width: 100%;
-    height: 100%;
+    height: auto;
     border: none;
     background-position: center;
     background-size: contain;
+  }
+  .about .contents .description .about_content .video-box {
+    width: 300px;
+    height: 200px;
   }
 
   .about .contents {
     gap: 0;
     border: none;
-  }
-
-  .about .contents .description .about_content .video-box {
-    width: 300px;
   }
 
   .about .contents .description .about_content .head-1 {
