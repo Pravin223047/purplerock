@@ -27,8 +27,10 @@
   --color: #fff;
   --color1: #000;
   --color2: #550051;
-  --hover-box-shadow: rgba(253, 252, 252, 0.19) 0px 10px 20px,
-    rgba(180, 180, 180, 0.23) 0px 6px 6px;
+  --hover-box-shadow: rgba(211, 210, 210, 0.432) 0px 10px 20px,
+    rgba(204, 204, 204, 0.466) 0px 6px 6px;
+  --hover-box-inset-shadow: rgba(255, 175, 222, 0.432) 0px 10px 20px,
+    rgba(253, 207, 234, 0.466) 0px 6px 6px inset;
   --gradient-white-bg2: linear-gradient(98deg, #e5eef7 0%, #fff 100%);
   --pink: #db0087;
 }
@@ -105,11 +107,12 @@ ul.navlist {
   border-radius: 5px;
   font-weight: 500;
   transition: all 0.3s ease;
+  box-shadow: var(--hover-box-shadow);
 }
 
 .btn:hover,
 .btn-box .btn:nth-child(2n):hover {
-  box-shadow: var(--hover-box-shadow);
+  box-shadow: var(--hover-box-inset-shadow);
 }
 
 .icon {
@@ -395,7 +398,7 @@ section {
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  border: 2px solid var(--pink);
+  box-shadow: var(--hover-box-shadow);
   width: 100%;
 }
 
@@ -441,22 +444,24 @@ section {
 
 .about .contents .description2 .meaning {
   display: flex;
-  text-align: justify;
+  flex-direction: column;
+  gap: 0.5rem;
   align-items: flex-start;
+  text-align: justify;
 }
 
-.about .contents .description2 .meaning p {
+.about .contents .description2 .meaning ul li {
   font-size: 1rem;
   font-weight: 400;
   color: var(--font-color);
-  line-height: 1.3rem;
+  line-height: 1.5rem;
 }
 
-.about .contents .description2 .meaning p b {
+.about .contents .description2 .meaning ul li b {
   color: rgb(0, 0, 0);
 }
 
-.about .contents .description2 .meaning p u b {
+.about .contents .description2 .meaning ul li u b {
   background: var(--gradient-color-bg);
   -webkit-background-clip: text;
   color: transparent;
@@ -465,7 +470,7 @@ section {
 .about .contents .description2 .desc-img {
   width: 250px;
   height: 250px;
-  border: 2px solid black;
+  box-shadow: var(--hover-box-shadow);
   border-radius: 0.2rem;
   display: flex;
   flex-direction: column;
@@ -486,8 +491,8 @@ section {
 }
 
 .about .contents .description2 .desc-img img {
-  height: 150px;
-  width: 150px;
+  height: 250px;
+  width: 250px;
 }
 
 .services {
@@ -506,15 +511,6 @@ section {
 
 .services .header span {
   font-size: 2.5rem;
-}
-
-.services .desc .desc-contents h2 {
-  font-size: 1.5rem;
-  color: var(--font-color);
-  font-weight: 500;
-  letter-spacing: 1px;
-  word-spacing: 2px;
-  text-align: center;
 }
 
 .allNames {
@@ -550,6 +546,7 @@ section {
   height: 110px;
   transition: 0.4s;
   z-index: 1;
+  background-color: #db0087;
 }
 
 .img-name span {
@@ -801,6 +798,12 @@ footer p span {
     justify-content: center;
     text-align: center;
   }
+
+  .btn-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 991px) {
@@ -873,12 +876,6 @@ footer p span {
     background: var(--gradient-white-bg);
     left: 0;
     border-top: 2px solid rgba(248, 202, 202, 0.7);
-  }
-
-  .about .contents .description,
-  .about .contents .description2 {
-    padding: 0;
-    border: 0;
   }
 
   .home .btn-box {
