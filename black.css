@@ -1078,4 +1078,13 @@ footer p span {
   header {
     padding: 0.4rem;
   }
+  .content h2 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+
+  .content h4 {
+    font-size: 15px;
+    margin-bottom: 1rem;
+  }
 }
