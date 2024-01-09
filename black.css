@@ -936,6 +936,7 @@ html.sr {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  pointer-events: none;
 }
 
 .main-content .box .img-text {
