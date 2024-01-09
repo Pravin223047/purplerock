@@ -825,6 +825,7 @@ section .proposal .proposals .text-box {
   width: 80%;
   padding: 30px 0;
   text-align: center;
+  pointer-events: none;
 }
 
 .wrapper .section-header {
@@ -878,6 +879,7 @@ section .proposal .proposals .text-box {
   padding: 5px 5px;
   background: var(--gradient-color-bg);
   color: white;
+  pointer-events: all;
 }
 
 #images .wrapper .main-content {
