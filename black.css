@@ -852,7 +852,7 @@ section .proposal .proposals .text-box {
 .content h2 {
   font-size: 30px;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   color: var(--color);
 }
 
@@ -860,6 +860,10 @@ section .proposal .proposals .text-box {
   font-size: 20px;
   margin-bottom: 1rem;
   color: var(--color);
+}
+
+.content h4.title {
+  padding: 0px 0px 10px 0px;
 }
 
 .content h2::after {
@@ -874,8 +878,7 @@ section .proposal .proposals .text-box {
 }
 
 .content .img-btn {
-  border: 1px solid black;
-  padding: 8px 8px;
+  padding: 12px 10px;
   border-radius: 5px;
   background: var(--gradient-color-bg);
   color: white;
