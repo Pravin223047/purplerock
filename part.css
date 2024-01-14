@@ -28,7 +28,7 @@
 }
 
 .dark-theme {
-  --main-color: #f72687;
+  --main-color: rgba(160, 8, 156, 1);
   --bg-color: #181818f3;
   --white-color: #e3edf7;
   --head-color: #e3edf7;
@@ -38,7 +38,7 @@
 }
 
 :root {
-  --main-color: #f72687;
+  --main-color: rgba(160, 8, 156, 1);
   --bg-color: #e3edf7;
   --white-color: #e3edf7;
   --head-color: #000000;
