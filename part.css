@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
@@ -23,19 +30,19 @@
 .dark-theme {
   --main-color: #f72687;
   --bg-color: #181818f3;
-  --white-color: #ffffff;
-  --head-color: #ffffff;
+  --white-color: #e3edf7;
+  --head-color: #e3edf7;
   --head1-color: #161616;
   --shadow-color: rgba(0, 0, 0, 0.2);
-  --text-color: #ffffff;
+  --text-color: #e3edf7;
 }
 
 :root {
   --main-color: #f72687;
-  --bg-color: #fffffff3;
-  --white-color: #ffffff;
+  --bg-color: #e3edf7;
+  --white-color: #e3edf7;
   --head-color: #000000;
-  --head1-color: #ffffff;
+  --head1-color: ##e3edf7;
   --shadow-color: rgba(0, 0, 0, 0.2);
   --text-color: #000000;
 }
@@ -83,9 +90,31 @@ p b {
   font-size: 1.7rem;
   border: 2px solid transparent;
   border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
 }
 
 .btn:hover {
+  background: transparent;
+  color: var(--main-color);
+  border-color: var(--main-color);
+}
+
+.container .box-container .box .image .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 3rem;
+  background: var(--main-color);
+  color: var(--white-color);
+  cursor: pointer;
+  font-size: 1.7rem;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+
+.container .box-container .box .image .btn:hover {
   background: transparent;
   color: var(--main-color);
   border-color: var(--main-color);
@@ -102,6 +131,11 @@ p b {
   padding: 1rem 1.3rem;
   font-size: 2rem;
   cursor: pointer;
+}
+
+.container.container1 {
+  padding-top: 0;
+  margin-top: 0;
 }
 
 .container .heading {
@@ -151,6 +185,13 @@ p b {
   box-shadow: 0 0.05rem 0.5rem var(--main-color);
 }
 
+.container .box-container .box .image p {
+  color: var(--text-color);
+  font-size: 1.7rem;
+  padding: 0.5rem 0;
+  text-align: justify;
+}
+
 .container .box-container .box .content p {
   color: var(--text-color);
   font-size: 1.7rem;
@@ -185,16 +226,22 @@ p b {
 }
 
 .container .box-container .video {
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 35rem;
-  flex: 1 1 35rem;
-  height: 40rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0.5rem;
 }
 
 .container .box-container .video iframe {
-  height: 100%;
-  width: 30%;
+  height: 500px;
+  width: 500px;
   -o-object-fit: cover;
   object-fit: cover;
   border: 0.6rem solid var(--main-color);
@@ -208,8 +255,29 @@ p b {
   overflow: hidden;
   border-radius: 0.5rem;
   padding: 1.5rem;
-  -webkit-box-shadow: 0 0.5rem 0.5rem var(--main-color);
-  box-shadow: 0 0.05rem 0.5rem var(--main-color);
+}
+
+.container .box-container .box .image.image_tk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.container .box-container .box .image.image_tk img {
+  width: 500px;
+  height: 500px;
+  border: none;
 }
 
 .container .box-container .box .image img {
@@ -217,6 +285,7 @@ p b {
   height: 100%;
   width: 100%;
   -o-object-fit: contain;
+  aspect-ratio: 1/1;
   object-fit: contain;
   overflow: hidden;
 }
@@ -370,12 +439,36 @@ p b {
   .container .box-container .box .content1 p {
     font-size: 2rem;
   }
+
+  .container .box-container .video {
+    height: auto;
+    width: 100%;
+  }
+
   .container .box-container .video iframe {
     width: 100%;
+    height: 400px;
+  }
+
+  .container .box-container .box .image.image_tk img {
+    width: 100%;
+    height: 400px;
   }
 
   .container .heading span {
     font-size: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .container .box-container .video iframe {
+    width: 100%;
+    height: 260px;
+  }
+
+  .container .box-container .box .image.image_tk img {
+    width: 100%;
+    height: 260px;
   }
 }
 
