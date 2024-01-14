@@ -55,6 +55,12 @@
     </head>
 
     <body>
+      <div class="container-loader">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <span class="loading">Loading...</span>
+      </div>
       <div id="darkmode" class="fas fa-moon"></div>
 
       <section class="container containery">
@@ -420,7 +426,7 @@
           >PARTY ON THE MOON [4/4]<i class="bx bx-right-arrow-alt"></i
         ></a>
       </div>
-      <div class="back">
+      <div class="back back1">
         <a href="https://purplerock.xyz/black" class="btn"
           ><i class="bx bx-left-arrow-alt"></i>The Purple Pill</a
         >
@@ -439,6 +445,85 @@
           darkIcon.classList.toggle("fa-sun");
           darkIcon.classList.toggle("fa-moon");
           body.classList.toggle("dark-theme");
+        });
+
+        var sections = document.querySelectorAll("section");
+        var containers = document.querySelectorAll(".container");
+        var footer = document.querySelector("footer");
+        var continueBox = document.querySelector(".continue_box");
+        var copyrightText = document.querySelector(".copyrightText");
+        var back = document.querySelector(".back");
+        var back1 = document.querySelector(".back1");
+
+        sections.forEach(function (section) {
+          section.style.display = "none";
+        });
+
+        containers.forEach(function (container) {
+          container.style.display = "none";
+        });
+
+        if (footer) {
+          footer.style.display = "none";
+        }
+
+        if (darkmode) {
+          darkmode.style.display = "none";
+        }
+
+        if (back) {
+          back.style.display = "none";
+        }
+
+        if (back1) {
+          back1.style.display = "none";
+        }
+
+        if (continueBox) {
+          continueBox.style.display = "none";
+        }
+
+        if (copyrightText) {
+          copyrightText.style.display = "none";
+        }
+
+        window.addEventListener("load", function () {
+          var loader = document.querySelector(".container-loader");
+          if (loader) {
+            loader.style.display = "none";
+          }
+
+          sections.forEach(function (section) {
+            section.style.display = "flex";
+          });
+
+          containers.forEach(function (container) {
+            container.style.display = "block";
+          });
+
+          if (footer) {
+            footer.style.display = "flex";
+          }
+
+          if (back) {
+            back.style.display = "flex";
+          }
+
+          if (back1) {
+            back1.style.display = "flex";
+          }
+
+          if (continueBox) {
+            continueBox.style.display = "flex";
+          }
+
+          if (darkmode) {
+            darkmode.style.display = "initial";
+          }
+
+          if (copyrightText) {
+            copyrightText.style.display = "flex";
+          }
         });
 
         document.addEventListener("DOMContentLoaded", function () {
