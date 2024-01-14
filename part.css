@@ -80,6 +80,19 @@ p b {
   text-decoration: underline;
 }
 
+.skeleton-img {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+
 .btn {
   display: inline-block;
   margin-top: 1rem;
