@@ -518,6 +518,7 @@ ul.navlist {
 
 .container .headh2 {
   font-size: 3rem;
+  width:100%;
   margin: 1.4rem 0;
   color: var(--text-color);
 }
