@@ -97,6 +97,11 @@ b {
   text-align: center;
 }
 
+p {
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
 .section1 {
   padding-top: 3rem;
 }
@@ -142,7 +147,8 @@ header {
   justify-content: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 10rem;
   z-index: 1000;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -545,6 +551,12 @@ header .follow a:hover {
   -o-object-fit: cover;
   object-fit: cover;
   overflow: hidden;
+}
+
+.container .box-container .box .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .container .box-container .box .content p {
