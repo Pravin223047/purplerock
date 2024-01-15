@@ -518,7 +518,7 @@ ul.navlist {
 
 .container .headh2 {
   font-size: 3rem;
-  width:100%;
+  width: 100%;
   margin: 1.4rem 0;
   color: var(--text-color);
 }
@@ -571,6 +571,7 @@ ul.navlist {
 .container .box-container .box .content {
   display: flex;
   flex-direction: column;
+  text-align: left;
   align-items: flex-start;
 }
 
