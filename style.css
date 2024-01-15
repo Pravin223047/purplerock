@@ -12,6 +12,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
 * {
@@ -88,6 +95,7 @@ header {
 header .logo {
   font-size: 1.7rem;
   font-weight: 700;
+  color: var(--color1);
 }
 
 span {
@@ -529,7 +537,8 @@ section {
 }
 
 .about .header span {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 600;
 }
 
 .about .contents {
@@ -548,6 +557,10 @@ section {
   word-spacing: 2px;
 }
 
+p {
+  line-height: 1.8;
+}
+
 .about .contents .description,
 .about .contents .description2 {
   display: -webkit-box;
@@ -562,6 +575,7 @@ section {
   align-items: center;
   gap: 1rem;
   padding: 1rem;
+  border: 2px solid var(--color2);
   -webkit-box-shadow: var(--hover-box-shadow);
   box-shadow: var(--hover-box-shadow);
   width: 100%;
@@ -585,8 +599,8 @@ section {
 }
 
 .about .contents .description .about_content p {
-  line-height: 1.5rem;
-  margin-top: 2rem;
+  line-height: 1.8rem;
+  margin: 2rem 0;
   font-weight: 400;
   text-align: justify;
   color: var(--font-color);
@@ -601,6 +615,7 @@ section {
   -ms-flex-align: center;
   align-items: center;
   gap: 0.8rem;
+  margin-top: 2rem;
 }
 
 .about .contents .description .about_content .name {
@@ -632,18 +647,22 @@ section {
   text-align: justify;
 }
 
-.about .contents .description2 .meaning ul li {
+.about .contents .description2 .meaning p {
   font-size: 1rem;
   font-weight: 400;
   color: var(--font-color);
   line-height: 1.5rem;
 }
 
-.about .contents .description2 .meaning ul li b {
+.about .contents .description2 .meaning p:last-child {
+  margin-bottom: 2rem;
+}
+
+.about .contents .description2 .meaning p b {
   color: rgb(0, 0, 0);
 }
 
-.about .contents .description2 .meaning ul li u b {
+.about .contents .description2 .meaning p u b {
   background: var(--gradient-color-bg);
   -webkit-background-clip: text;
   color: transparent;
@@ -701,9 +720,25 @@ section {
   flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
   text-align: center;
   gap: 1.3rem;
+}
+
+.services .desc .desc-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .services h2 {
@@ -711,7 +746,8 @@ section {
 }
 
 .services .header span {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 600;
 }
 
 .allNames {
@@ -806,14 +842,14 @@ section .proposal {
 }
 
 section .proposal span {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 600;
 }
 
 section .proposal .proposals {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1rem 1fr;
-  grid-template-columns: repeat(2, 1fr);
   background: var(--gradient-white-bg2);
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0,
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
@@ -831,7 +867,7 @@ section .proposal .prop {
   display: -ms-flexbox;
   display: flex;
   background: var(--gradient-white-bg2);
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0,
+  -webkit-box-shadow: rgba(100, 82, 82, 0.1) 0px 1px 3px 0,
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0,
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
@@ -850,9 +886,17 @@ section .proposal .prop {
   justify-content: center;
 }
 
+section .proposal .prop h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+section .proposal .prop h2 span {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
 section .proposal .prop .text-box1 {
-  -webkit-box-shadow: var(--hover-box-shadow);
-  box-shadow: var(--hover-box-shadow);
   border-radius: 10px;
   padding: 1rem;
   display: -webkit-box;
@@ -869,12 +913,14 @@ section .proposal .prop .text-box1 {
   gap: 1rem;
 }
 
-section .proposal .proposals .text-box,
-section .proposal .proposals .text-box .logo_img {
-  -webkit-box-shadow: var(--hover-box-shadow);
-  box-shadow: var(--hover-box-shadow);
-  border-radius: 10px;
-  padding: 1rem;
+.proposals {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.proposals .logo_img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -885,31 +931,34 @@ section .proposal .proposals .text-box .logo_img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  text-align: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  gap: 1rem;
-}
-
-section .proposal .proposals .text-box .logo_img a {
-  width: 15rem;
-}
-
-section .proposal .proposals .text-box .logo_img .image_logo {
   width: 100%;
   height: 100%;
 }
 
-section .proposal .proposals .text-box .logo_img .image_logo img {
+.proposals .logo_img a {
+  margin-bottom: 2rem;
+}
+
+.proposals .logo_img .image_logo img {
   width: 200px;
   height: 200px;
   -o-object-fit: contain;
   object-fit: contain;
-  border: 2px solid var(--color2);
-  border-radius: 20%;
-  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.proposals .logo_img .image_logo img:nth-last-child(2),
+.proposals .logo_img .image_logo img:last-child {
+  width: 150px;
+  height: 150px;
+}
+
+.proposals .logo_img .btn {
+  width: 15rem;
+  text-align: center;
 }
 
 .text-box span {
@@ -978,6 +1027,11 @@ section .proposal .proposals .text-box .logo_img .image_logo img {
   height: 100%;
   border: 0.3rem solid purple;
   border-radius: 0.4rem;
+}
+
+.text-box1 .cont .image:hover img {
+  border: 0.4rem solid rgb(71, 0, 71);
+  opacity: 0.7;
 }
 
 #progress {
@@ -1172,6 +1226,12 @@ footer p span {
   footer {
     padding-left: 3%;
     padding-right: 3%;
+  }
+
+  .proposals .logo_img .image_logo img:nth-last-child(2),
+  .proposals .logo_img .image_logo img:last-child {
+    width: 120px;
+    height: 120px;
   }
 
   .services {
