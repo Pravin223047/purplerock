@@ -29,3 +29,11 @@ links.forEach((link) => {
     secondaryCursor.classList.remove("active");
   });
 });
+
+let menuIcon = document.querySelector(".menu-icon");
+let navlist = document.querySelector(".navlist");
+menuIcon.addEventListener("click", () => {
+  menuIcon.classList.toggle("fa-x");
+  navlist.classList.toggle("active");
+  document.body.classList.toggle("open");
+});
