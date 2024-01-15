@@ -1385,6 +1385,11 @@ footer p span {
     margin-right: 2rem;
   }
 
+  .about .contents .description,
+  .about .contents .description2 {
+    border: none;
+  }
+
   .btn-box {
     display: -ms-grid;
     display: grid;
