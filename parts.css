@@ -487,8 +487,6 @@ header .follow a:hover {
   object-fit: cover;
   border: 0.6rem solid var(--main-color);
   border-radius: 0.5rem;
-  -webkit-box-shadow: var(--box-shadow);
-  box-shadow: var(--box-shadow);
 }
 
 .container .heading {
@@ -518,8 +516,6 @@ header .follow a:hover {
 .container .box-container .box {
   background-color: var(--head1-color);
   padding: 1.5rem;
-  -webkit-box-shadow: var(--box-shadow);
-  box-shadow: var(--box-shadow);
 }
 
 .container .box-container .box .image {
@@ -590,8 +586,6 @@ header .follow a:hover {
 .continue_box .box {
   width: auto;
   border-radius: 0.5rem;
-  -webkit-box-shadow: var(--box-shadow);
-  box-shadow: var(--box-shadow);
   background-color: var(--head1-color);
   padding: 1rem;
 }
