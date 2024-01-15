@@ -28,23 +28,25 @@
 }
 
 .dark-theme {
-  --main-color: rgba(160, 8, 156, 1);
+  --main-color: #a0089c;
   --bg-color: #181818f3;
   --white-color: #e3edf7;
   --head-color: #e3edf7;
   --head1-color: #161616;
   --shadow-color: rgba(0, 0, 0, 0.2);
   --text-color: #e3edf7;
+  --box-shadow: 0 0.1rem 0.1rem #c4c4c4;
 }
 
 :root {
-  --main-color: rgba(160, 8, 156, 1);
+  --main-color: #a0089c;
   --bg-color: #e3edf7;
   --white-color: #e3edf7;
   --head-color: #000000;
   --head1-color: ##e3edf7;
   --shadow-color: rgba(0, 0, 0, 0.2);
   --text-color: #000000;
+  --box-shadow: 0 0.1rem 0.1rem #c4c4c4;
 }
 
 html {
