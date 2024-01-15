@@ -449,7 +449,7 @@ ul.navlist {
 }
 
 .home .content h3 {
-  font-size: 3.8rem;
+  font-size: 4.2rem;
   color: var(--main-color);
   text-transform: uppercase;
 }
@@ -799,6 +799,7 @@ footer .contain .quicklinks .footer__links li .footer__link:hover {
 
   .container1 {
     margin-top: 12rem;
+    align-items: flex-start;
   }
 
   .home .image {
