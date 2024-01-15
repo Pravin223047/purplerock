@@ -657,7 +657,7 @@ footer .contain .sci li a {
   height: 36px;
   background: var(--head-color);
   border-radius: 50%;
-  color: var(--head1-color);
+  color: var(--bg-color);
   display: -ms-grid;
   display: grid;
   -ms-flex-line-pack: center;
@@ -670,7 +670,7 @@ footer .contain .sci li a {
 }
 
 footer .contain .sci li a i {
-  color: var(--head-color);
+  color: var(--head1-color);
   font-size: 2rem;
 }
 
