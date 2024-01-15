@@ -494,7 +494,6 @@ ul.navlist {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: 1.5rem 0;
 }
 
 .box-container .box .twit_img a img:hover {
@@ -542,14 +541,12 @@ ul.navlist {
 .container .box-container .box .image {
   overflow: hidden;
   border-radius: 0.5rem;
-  margin: 1.5rem 0;
 }
 
 .container .box-container .box .image1 {
   overflow: hidden;
   border-radius: 0.5rem;
   height: 400px;
-  margin: 1.5rem 0;
 }
 
 .container .box-container .box .image1 img {
@@ -869,6 +866,12 @@ footer .contain .quicklinks .footer__links li .footer__link:hover {
   .cursor-1,
   .cursor-2 {
     display: none;
+  }
+
+  .container .box-container .box .image1,
+  .container .box-container .box .image,
+  .container .box-container .box .video {
+    margin: 1.5rem 0;
   }
 
   .container .box-container .box .image1 {
