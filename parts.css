@@ -123,6 +123,8 @@ b {
 
 p {
   line-height: 1.7;
+  margin-bottom: 1rem;
+  width: 100%;
 }
 
 .section1 {
