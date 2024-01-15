@@ -121,8 +121,8 @@ b {
 }
 
 p {
-  line-height: 1.8;
-  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
 }
 
 .section1 {
@@ -180,7 +180,7 @@ header .logo {
   font-size: 2.7rem;
   font-weight: 700;
   color: var(--text-color);
-  letter-spacing: 1.2px;
+  letter-spacing: 1.1px;
 }
 
 header .logo span {
