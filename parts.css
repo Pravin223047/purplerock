@@ -449,7 +449,7 @@ ul.navlist {
 }
 
 .home .content h3 {
-  font-size: 3.8rem;
+  font-size: 4.2rem;
   color: var(--main-color);
   text-transform: uppercase;
 }
@@ -492,6 +492,7 @@ ul.navlist {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin: 1.5rem 0;
 }
 
 .box-container .box .twit_img a img:hover {
@@ -538,12 +539,14 @@ ul.navlist {
 .container .box-container .box .image {
   overflow: hidden;
   border-radius: 0.5rem;
+  margin: 1.5rem 0;
 }
 
 .container .box-container .box .image1 {
   overflow: hidden;
   border-radius: 0.5rem;
   height: 400px;
+  margin: 1.5rem 0;
 }
 
 .container .box-container .box .image1 img {
