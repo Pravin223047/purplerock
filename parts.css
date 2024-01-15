@@ -42,7 +42,7 @@
 }
 
 .dark-theme {
-  --main-color: #a0089c;
+  --main-color: #e60cde;
   --bg-color: #181818f3;
   --white-color: #e3edf7;
   --head-color: #e3edf7;
@@ -50,6 +50,18 @@
   --shadow-color: rgba(0, 0, 0, 0.2);
   --text-color: #e3edf7;
   --box-shadow: 0 0.1rem 0.1rem #c4c4c4;
+  --gradient-white-bg: linear-gradient(
+    0deg,
+    #1d1d1d 0%,
+    #1e1e1f 51%,
+    #000000 100%
+  );
+  --gradient-color-bg: linear-gradient(
+    180deg,
+    rgba(247, 1, 120, 1) 0%,
+    rgba(160, 8, 156, 1) 51%,
+    rgba(99, 13, 178, 1) 100%
+  );
 }
 
 :root {
@@ -61,6 +73,18 @@
   --shadow-color: rgba(0, 0, 0, 0.2);
   --text-color: #000000;
   --box-shadow: 0 0.1rem 0.1rem #c4c4c4;
+  --gradient-white-bg: linear-gradient(
+    0deg,
+    #fff 0%,
+    #edf4fa 51%,
+    #e5eef7 100%
+  );
+  --gradient-color-bg: linear-gradient(
+    180deg,
+    rgba(247, 1, 120, 1) 0%,
+    rgba(160, 8, 156, 1) 51%,
+    rgba(99, 13, 178, 1) 100%
+  );
 }
 
 html {
@@ -71,7 +95,6 @@ html {
 body {
   background: var(--bg-color);
   color: var(--text-color);
-  padding-left: 30rem;
 }
 
 b {
@@ -111,58 +134,101 @@ p {
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 0.8rem 3rem;
-  background: var(--main-color);
+  background: var(--gradient-color-bg);
   color: var(--white-color);
   cursor: pointer;
   font-size: 1.7rem;
-  border: 2px solid transparent;
   border-radius: 0.5rem;
   display: flex;
   align-items: center;
   gap: 1rem;
   width: fit-content;
+  border: 2px solid transparent;
 }
 
 .btn:hover {
   background: transparent;
   color: var(--main-color);
-  border-color: var(--main-color);
+  border-color: var(--gradient-color-bg);
 }
 
 header {
+  padding: 15px 8%;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  bottom: 0;
-  background: var(--head1-color);
-  border-right: 1px solid var(--text-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: center;
-  gap: 10rem;
-  z-index: 1000;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: column;
-  flex-flow: column;
-  padding: 2rem 2rem;
-  width: 30rem;
-  text-align: center;
+  justify-content: space-between;
+  background: var(--gradient-white-bg);
+  z-index: 1000000;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
 }
 
 header .logo {
-  text-transform: uppercase;
-  color: var(--head-color);
-  font-size: 3rem;
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: var(--text-color);
+  letter-spacing: 1.2px;
+}
+
+header .logo span {
+  color: var(--main-color);
+}
+
+ul.navlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navlist li {
+  margin: 0 1rem;
+}
+
+.navlist li a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--text-color);
+  letter-spacing: 0.8px;
+  margin: 0 1rem;
+  padding: 1rem;
+  border: 2px solid var(--main-color);
+  border-radius: 12px;
+}
+
+.navlist li a:hover,
+.navlist li a.active {
+  background: var(--gradient-color-bg);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.right_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,97 +238,41 @@ header .logo {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  font-weight: bolder;
+  /* border: 1px solid #570080; */
 }
 
-header .logo .head_text {
-  text-transform: uppercase;
+.icon i {
+  font-size: 1.7rem;
+  font-weight: 500;
   color: var(--head-color);
-  font-size: 3rem;
-  font-weight: bolder;
 }
 
-header .logo img {
-  height: 100px;
-  border-radius: 1rem;
-  padding-bottom: 10px;
-}
-
-header .logo span {
-  text-transform: uppercase;
-  color: var(--main-color);
-}
-
-header .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.menu-icon {
+  z-index: 1000;
+  background: var(--main-color);
+  color: var(--white-color);
+  border-radius: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
   display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-header .navbar a {
-  display: block;
-  font-size: 2rem;
-  color: var(--white-color);
-  background-color: var(--main-color);
-  padding: 6px 6px;
-  width: 25rem;
-  border-radius: 5px;
-  margin: 0.6rem 0;
-  border: 2px solid transparent;
-}
-
-header .navbar a:hover {
-  color: var(--main-color);
-  background-color: transparent;
-  border-color: var(--main-color);
-}
-
-header .follow a {
-  font-size: 2.5rem;
-  color: var(--head-color);
-  margin: 0 0.7rem;
-}
-
-header .follow a:hover {
-  color: var(--main-color);
-}
-
-#menu-bars {
-  position: fixed;
-  top: 1rem;
-  right: 2rem;
-  z-index: 10000;
-  background: var(--main-color);
-  color: var(--white-color);
-  border-radius: 0.5rem;
-  padding: 1rem 1.5rem;
-  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   cursor: pointer;
-  display: none;
 }
 
-#darkmode {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  z-index: 10000;
+.right_header .darkmode {
+  z-index: 1000;
   background: var(--main-color);
   color: var(--white-color);
   border-radius: 0.5rem;
-  padding: 1rem 1.3rem;
+  width: 4rem;
+  height: 4rem;
   font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 
@@ -771,6 +781,10 @@ footer .contain .quicklinks .footer__links li .footer__link:hover {
     flex-direction: column;
   }
 
+  .container1 {
+    margin-top: 12rem;
+  }
+
   .home .image {
     height: fit-content;
   }
@@ -816,22 +830,14 @@ footer .contain .quicklinks .footer__links li .footer__link:hover {
   }
 
   #menu-bars {
-    display: initial;
+    display: flex;
   }
   #darkmode {
     right: 8rem;
   }
 
-  header {
-    left: -120%;
-  }
-
   footer {
     padding: 40px;
-  }
-
-  header.active {
-    left: 0%;
   }
 
   .cursor-1,
@@ -860,6 +866,58 @@ footer .contain .quicklinks .footer__links li .footer__link:hover {
     width: 100%;
     height: 400px;
   }
+
+  header {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+
+@media (max-width: 860px) {
+  .menu-icon {
+    display: block;
+  }
+  ul.navlist {
+    position: absolute;
+    top: -1000px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: center;
+    display: block;
+    background: var(--gradient-white-bg);
+    left: 0;
+    border-top: 2px solid rgba(248, 202, 202, 0.7);
+  }
+
+  ul.navlist a {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .navlist.active {
+    top: 100%;
+  }
+
+  .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 8;
+    opacity: 0;
+    -webkit-transform: 0.3s;
+    -ms-transform: 0.3s;
+    transform: 0.3s;
+    pointer-events: none;
+  }
+  body.open .overlay {
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
 
 @media (max-width: 772px) {
@@ -873,12 +931,25 @@ footer .contain .quicklinks .footer__links li .footer__link:hover {
   .copyrightText {
     padding: 20px 40px 30px;
   }
+  header {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
 }
 
 @media (max-width: 500px) {
   .container .box-container .video iframe {
     width: 100%;
     height: 260px;
+  }
+
+  header .btn {
+    padding: 6px 8px;
+    font-size: 0.9rem;
+  }
+
+  header {
+    padding: 2rem 2rem;
   }
 }
 
@@ -895,10 +966,6 @@ footer .contain .quicklinks .footer__links li .footer__link:hover {
 
   footer {
     padding: 20px;
-  }
-
-  header {
-    width: 100%;
   }
 }
 
