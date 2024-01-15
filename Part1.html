@@ -63,26 +63,18 @@
       <span class="loading">Loading...</span>
     </div>
 
-    <div id="darkmode" class="fas fa-moon"></div>
-    <div id="menu-bars" class="fas fa-bars"></div>
-
     <header>
-      <a href="#" class="logo"
-        ><img
-          src="part_images/purple_pill.jpeg"
-          alt="Purple Logo"
-          loading="lazy"
-        />
-        <div class="head_text"><span>Purple</span> Pill</div>
-        Part 1</a
-      >
-
-      <nav class="navbar">
-        <a href="#">Part 1</a>
-        <a href="https://www.purplerock.xyz/part2">Part 2</a>
-        <a href="https://www.purplerock.xyz/part3">Part 3</a>
-        <a href="https://www.purplerock.xyz/part4">Part 4</a>
-      </nav>
+      <a href="#" class="logo"><span>P</span>urple<span>P</span>ill - Part 1</a>
+      <ul class="navlist">
+        <li><a href="#perplexity">Part 1</a></li>
+        <li><a href="#values">Part 2</a></li>
+        <li><a href="#middle">Part 3</a></li>
+        <li><a href="#mission">Part 4</a></li>
+      </ul>
+      <div class="right_header">
+        <div id="darkmode" class="fas fa-moon darkmode"></div>
+        <div class="fas fa-bars menu-icon"></div>
+      </div>
     </header>
 
     <section class="home section1 container1" id="home">
@@ -153,6 +145,34 @@
               come into the world with, but to actually reach for the stars? Why
               don’t we teach them that anything is possible??
             </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="part_images/Image23.jpeg" alt="Image20" loading="lazy" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="part_images/Image22.jpeg" alt="Image22" loading="lazy" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img
+              src="part_images/Image21 (1).jpeg"
+              alt="Image21"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="box-container">
+        <div class="box">
+          <div class="content contenty">
             <p>
               I personally HATED school, more than words can ever effectively
               express. Do you know why? I hated school because I hated being
@@ -240,6 +260,7 @@
           </div>
         </div>
       </div>
+
       <div class="box-container">
         <div class="box">
           <div class="content">
@@ -381,6 +402,7 @@
               ones that we can support and follow rather than some tragedy we
               can do nothing about.
             </p>
+
             <p>
               In this day an age, being a storyteller on the internet is not
               just a job for companies where pay is rapidly increasing, but an
@@ -417,6 +439,30 @@
               just you. It’s obvious when stated this why how impactful this can
               be.
             </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="part_images/Image24.jpeg" alt="Image24" loading="lazy" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="part_images/Image25.jpeg" alt="Image25" loading="lazy" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="part_images/Image26.jpeg" alt="Image26" loading="lazy" />
+          </div>
+        </div>
+      </div>
+      <div class="box-container">
+        <div class="box">
+          <div class="content contenty">
             <p>
               Colleges are getting outdated. People dedicating their time to
               learn the craft of content are joining an emerging creator
@@ -573,6 +619,23 @@
       </div>
       <div class="box-container">
         <div class="box">
+          <div class="image">
+            <img src="part_images/Image27.jpeg" alt="Image27" loading="lazy" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="part_images/Image28.jpeg" alt="Image28" loading="lazy" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="part_images/Image29.jpeg" alt="Image29" loading="lazy" />
+          </div>
+        </div>
+      </div>
+      <div class="box-container">
+        <div class="box">
           <div class="content contenty">
             <h2 class="headh2"><b>Solution:</b></h2>
             <p>
@@ -583,6 +646,23 @@
               We are using this influence to gain funding, recruit more people,
               shift mindsets in a positive direction.
             </p>
+          </div>
+        </div>
+      </div>
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="part_images/Image30.jpeg" alt="Image30" loading="lazy" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="part_images/Image31.jpeg" alt="Image31" loading="lazy" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+            <img src="part_images/Image32.jpeg" alt="Image32" loading="lazy" />
           </div>
         </div>
       </div>
@@ -729,7 +809,6 @@
     <script src="part.js"></script>
 
     <script>
-      let menuIcon = document.querySelector("#menu-bars");
       let navbar = document.querySelector(".navbar");
 
       menuIcon.addEventListener("click", () => {
@@ -749,11 +828,6 @@
       var continueBox = document.querySelector(".continue_box");
       var copyrightText = document.querySelector(".copyrightText");
       var body = document.querySelector("body");
-      var menubars = document.querySelector("#menu-bars");
-
-      if (body) {
-        body.style.padding = "0";
-      }
 
       sections.forEach(function (section) {
         section.style.display = "none";
@@ -767,8 +841,8 @@
         footer.style.display = "none";
       }
 
-      if (menubars) {
-        menubars.style.display = "none";
+      if (menuIcon) {
+        menuIcon.style.display = "none";
       }
 
       if (darkmode) {
@@ -793,15 +867,11 @@
           loader.style.display = "none";
         }
 
-        body.style.paddingLeft = "30rem";
-
         function adjustStyles() {
           if (window.innerWidth <= 991) {
-            body.style.padding = "0";
-            menubars.style.display = "initial";
+            menuIcon.style.display = "flex";
           } else {
-            body.style.paddingLeft = "30rem";
-            menubars.style.display = "none";
+            menuIcon.style.display = "none";
           }
         }
         adjustStyles();
@@ -828,7 +898,7 @@
         }
 
         if (darkmode) {
-          darkmode.style.display = "initial";
+          darkmode.style.display = "flex";
         }
 
         if (continueBox) {
