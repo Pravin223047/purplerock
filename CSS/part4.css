@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* Common CSS Styles Start*/
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800;900&display=swap");
@@ -919,6 +926,8 @@ footer .contain .quicklinks .footer__links li .footer__link:hover {
   }
 
   .home .content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 40rem;
     flex: 1 1 40rem;
     display: -webkit-box;
     display: -ms-flexbox;
