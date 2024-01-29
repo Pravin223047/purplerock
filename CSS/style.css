@@ -19,6 +19,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 
 * {
@@ -721,6 +728,7 @@ p {
   -webkit-box-align: center;
   -ms-flex-align: center;
   text-align: center;
+  align-items: center;
   gap: 1.3rem;
 }
 
@@ -728,12 +736,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  text-align: left;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -743,6 +746,7 @@ p {
 
 .services h2 {
   text-align: center;
+  margin-bottom: 1.2rem;
 }
 
 .services .header span {
