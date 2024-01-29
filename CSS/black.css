@@ -595,6 +595,7 @@ ul.navlist {
 .about .contents .description .about_content .heading {
   font-size: 1.8rem;
   font-family: 500;
+  margin-bottom: 1.2rem;
   color: var(--color1);
 }
 
